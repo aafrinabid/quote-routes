@@ -23,6 +23,7 @@ body {
 }
 
 .btn {
+  justify-content: center;
   text-decoration: none;
   background-color: teal;
   color: white;
@@ -53,4 +54,8 @@ body {
 .btn--flat:active {
   background-color: teal;
   color: white;
+}
+
+.centerme{
+  justify-content: center;
 }

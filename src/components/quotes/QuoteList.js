@@ -2,6 +2,8 @@ import { Fragment } from 'react';
 import { useHistory,useLocation } from 'react-router-dom';
 import QuoteItem from './QuoteItem';
 import classes from './QuoteList.module.css';
+import { Link } from 'react-router-dom';
+
 
 const sortQuotes=(quotes,ascending)=>{
   return quotes.sort((quoteA,quoteB)=>{
@@ -50,7 +52,14 @@ const sortedQuotes=sortQuotes(props.quotes,isSortingAscending)
           />
         ))}
       </ul>
+      <div className='centered'>
+      <Link to="/new-quote" className='btn'>
+        Add a Quote
+      </Link>
+      </div>
     </Fragment>
+
+      
   );
 };
 
